@@ -2,6 +2,7 @@
 <%= render 'shared/headline' %>
 <div class="container">
   <div class= "row ">
+  <%# タブをスマホにした時はスライド式にする %>
     <div class="box 1 col-md-6 ">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -14,26 +15,52 @@
         </div>
       </nav>
       <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="follow" role="tabpanel" aria-labelledby="follow-tab">
-<div class="row">
-  <div class="col-4">
-    <div class="list-group" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
-      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
-    </div>
-  </div>
-  <div class="col-8">
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
-      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-    </div>
-  </div>
-</div>
+        <div class="tab-pane fade show active mt-4" id="follow" role="tabpanel" aria-labelledby="follow-tab">
+          <div class="container mb-4">
+            <div class= "row ">   
+              <div class="box 1 col-md-2 ">
+              <span class="badge badge-secondary p-2">受付中</span>
+              </div>
+              <div class="box 1 col-md-10 text-primary">
+               黄緑のアイテムを生かすためには他にどんな色を合わせれば良いでしょうか?
+              </div>
+              <div class="box 1 col-md-2 ">
+                <p class="text-center">0</p>              </div>
+              <div class="box 1 col-md-10 ">
+               <span class="badge badge-info">Doublet</span>
+               <span class="badge badge-info">Belt</span>
+               <span class="badge badge-info">Green</span>
+              </div>
+              <div class="box 1 col-md-2 ">
+              </div>
+                <div class="box 1 col-md-8 ">
+                  <img class="img-fruid rounded"src="https://i.picsum.photos/id/717/20/20.jpg" class="card-img" alt="...">
+                _summer_situation717
+              </div>
+               <div class="box 1 col-md-2 small ">
+                2分前
+              </div>
+            </div>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
+
         <div class="tab-pane fade" id="nav-new" role="tabpanel" aria-labelledby="nav-new-tab">...</div>
         <div class="tab-pane fade" id="nav-soaring" role="tabpanel" aria-labelledby="nav-soaring-tab">...</div>
         <div class="tab-pane fade" id="nav-unanswed" role="tabpanel" aria-labelledby="nav-unanswed-tab">...</div>

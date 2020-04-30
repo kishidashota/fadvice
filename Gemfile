@@ -49,5 +49,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'font-awesome-sass'
-gem 'bootstrap', '~>4.0.0'
+gem 'bootstrap', '~>4.3.1'
 gem 'mini_racer'
